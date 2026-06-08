@@ -458,7 +458,7 @@ nav::after {
   min-height: 100vh;
   display: flex; align-items: center;
   position: relative; overflow: hidden;
-  padding: 130px var(--page-pad) 90px;
+  padding: 88px var(--page-pad) 70px;
 }
 
 .hero-bg {
@@ -514,7 +514,7 @@ nav::after {
 
 .hero-title {
   font-family: var(--font-display);
-  font-size: clamp(3rem, 5.5vw, 5.8rem);
+  font-size: clamp(3.6rem, 6.5vw, 7rem);
   font-weight: 400; line-height: 1.04;
   margin-bottom: 8px; letter-spacing: -0.01em;
   animation: slideIn 0.9s 0.1s var(--ease) both;
@@ -995,7 +995,10 @@ footer { position: relative; }
     <a href="#patent">Patent</a>
     <a href="#contact">Contact</a>
   </div>
-  <a href="#contact" class="nav-cta">Contact Us</a>
+  <div style="display:flex;align-items:center;gap:12px;">
+    <a href="#demo" style="font-family:var(--font-mono);font-size:0.72rem;color:var(--mist);text-decoration:none;letter-spacing:0.08em;text-transform:uppercase;transition:color 0.25s;" onmouseover="this.style.color='var(--white)'" onmouseout="this.style.color='var(--mist)'">▶ Demo</a>
+    <a href="mailto:mhndvrj@gmail.com" class="nav-cta">Contact Us</a>
+  </div>
 </nav>
 
 <!-- HERO -->
@@ -1005,7 +1008,6 @@ footer { position: relative; }
   <div class="hero-orb orb1"></div>
   <div class="hero-orb orb2"></div>
   <div class="hero-content">
-    <div class="hero-badge"><span class="badge-dot"></span>Patent Filed — India &amp; PCT</div>
     <h1 class="hero-title">
       <em>Stereopsis 3D</em>
       <strong>Fusion Camera</strong>
@@ -1014,10 +1016,7 @@ footer { position: relative; }
     <p class="hero-subtitle">
       The <strong>Stereopsis 3D Fusion Camera</strong> — an experimental imaging system designed to enhance depth perception on conventional 2D displays. Prototype demonstrations suggest increased scene layering and depth sensation under both binocular and monocular viewing conditions, without glasses or headsets.
     </p>
-    <div class="hero-actions">
-      <a href="#contact" class="btn-primary">Request Evaluation Package</a>
-      <a href="#demo" class="btn-secondary">▶ Watch Demo</a>
-    </div>
+    
   </div>
   <div class="hero-stats">
     <div class="stat-card"><div class="stat-num">0</div><div class="stat-label">Glasses Needed</div></div>
@@ -1658,7 +1657,6 @@ footer { position: relative; }
         </div>
       </div>
       <div style="display:flex;gap:16px;flex-wrap:wrap;">
-        <a href="#contact" class="btn-primary">Contact Mohan</a>
         <a href="mailto:mhndvrj@gmail.com" class="btn-secondary">mhndvrj@gmail.com</a>
       </div>
     </div>
@@ -1738,7 +1736,7 @@ footer { position: relative; }
       <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:600;margin-bottom:8px;margin-top:0;">How to Engage</h3>
       <p style="color:var(--gray);font-size:0.88rem;line-height:1.8;margin-bottom:32px;">We follow a simple, transparent process to protect both parties and ensure efficient evaluation.</p>
       <div class="steps">
-        <div class="step"><div class="step-num">1</div><div><h4>Request Evaluation Package</h4><p>Receive the Technology Introduction document and demonstration video for initial review.</p></div></div>
+        <div class="step"><div class="step-num">1</div><div><h4>Initial Contact</h4><p>Reach out via email to introduce your organisation and area of interest in the technology.</p></div></div>
         <div class="step"><div class="step-num">2</div><div><h4>Execute Mutual NDA</h4><p>Sign a Mutual Non-Disclosure Agreement to protect both parties before full technical disclosure.</p></div></div>
         <div class="step"><div class="step-num">3</div><div><h4>Full Technical Briefing</h4><p>Receive complete patent documentation, technical drawings, and arrange a live demonstration.</p></div></div>
         <div class="step"><div class="step-num">4</div><div><h4>Negotiate Licensing Terms</h4><p>Discuss and finalise the licensing structure that best suits your organisation's strategy.</p></div></div>
@@ -1770,33 +1768,37 @@ footer { position: relative; }
         <div class="contact-item"><div class="contact-item-icon">🌍</div><div class="contact-item-text"><div class="ci-label">Country</div><div class="ci-value">India</div></div></div>
       </div>
     </div>
-    <div class="contact-form">
-      <h3>Request Evaluation Package</h3>
-      <p class="form-sub">Complete the form and we will respond within 2 business days.</p>
-      <div class="form-row">
-        <div class="form-group"><label>First Name</label><input type="text" placeholder="John"/></div>
-        <div class="form-group"><label>Last Name</label><input type="text" placeholder="Smith"/></div>
+    <div style="background:var(--surface);border:1px solid var(--border-md);border-radius:var(--r-lg);padding:52px;backdrop-filter:blur(16px);box-shadow:var(--shadow-card);">
+      <div style="display:flex;flex-direction:column;gap:20px;">
+        <a href="mailto:mhndvrj@gmail.com" style="display:flex;align-items:center;gap:18px;padding:20px 24px;background:rgba(29,99,196,0.08);border:1px solid rgba(45,138,224,0.22);border-radius:var(--r-md);text-decoration:none;transition:all 0.25s var(--ease);" onmouseover="this.style.borderColor='rgba(45,138,224,0.5)';this.style.background='rgba(29,99,196,0.14)'" onmouseout="this.style.borderColor='rgba(45,138,224,0.22)';this.style.background='rgba(29,99,196,0.08)'">
+          <div style="width:44px;height:44px;background:rgba(45,138,224,0.15);border-radius:var(--r-sm);display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;">📧</div>
+          <div>
+            <div style="font-family:var(--font-mono);font-size:0.62rem;color:var(--fog);text-transform:uppercase;letter-spacing:0.14em;">Email — Primary Contact</div>
+            <div style="font-size:0.95rem;color:var(--frost);font-weight:500;margin-top:3px;">mhndvrj@gmail.com</div>
+          </div>
+        </a>
+        <div style="display:flex;align-items:center;gap:18px;padding:20px 24px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-md);">
+          <div style="width:44px;height:44px;background:rgba(184,137,46,0.1);border-radius:var(--r-sm);display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;">🏛️</div>
+          <div>
+            <div style="font-family:var(--font-mono);font-size:0.62rem;color:var(--fog);text-transform:uppercase;letter-spacing:0.14em;">Organisation</div>
+            <div style="font-size:0.92rem;color:var(--white);font-weight:500;margin-top:3px;">MBSH Engineering Private Limited</div>
+          </div>
+        </div>
+        <div style="display:flex;align-items:center;gap:18px;padding:20px 24px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-md);">
+          <div style="width:44px;height:44px;background:rgba(184,137,46,0.1);border-radius:var(--r-sm);display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;">⚖️</div>
+          <div>
+            <div style="font-family:var(--font-mono);font-size:0.62rem;color:var(--fog);text-transform:uppercase;letter-spacing:0.14em;">Patent Status</div>
+            <div style="font-size:0.92rem;color:var(--champagne);font-weight:500;margin-top:3px;">Filed &amp; Pending — India &amp; PCT</div>
+          </div>
+        </div>
+        <div style="display:flex;align-items:center;gap:18px;padding:20px 24px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-md);">
+          <div style="width:44px;height:44px;background:rgba(184,137,46,0.1);border-radius:var(--r-sm);display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;">🌍</div>
+          <div>
+            <div style="font-family:var(--font-mono);font-size:0.62rem;color:var(--fog);text-transform:uppercase;letter-spacing:0.14em;">Country</div>
+            <div style="font-size:0.92rem;color:var(--white);font-weight:500;margin-top:3px;">India · Available for Global Licensing</div>
+          </div>
+        </div>
       </div>
-      <div class="form-group"><label>Organisation</label><input type="text" placeholder="Company Name"/></div>
-      <div class="form-group"><label>Email Address</label><input type="email" placeholder="you@company.com"/></div>
-      <div class="form-group"><label>Industry Sector</label>
-        <select>
-          <option value="">Select your industry...</option>
-          <option>Cinema &amp; Entertainment</option>
-          <option>Medical &amp; Healthcare</option>
-          <option>Cinema Camera Manufacturer</option>
-          <option>Optical Lens Manufacturer</option>
-          <option>Ophthalmology &amp; Vision Research</option>
-          <option>Bionic Eye / Neuroscience</option>
-          <option>Holographic Display R&amp;D</option>
-          <option>Automotive &amp; Navigation</option>
-          <option>Mobile &amp; Consumer Electronics</option>
-          <option>Space &amp; Aviation</option>
-          <option>Other</option>
-        </select>
-      </div>
-      <div class="form-group"><label>Message</label><textarea rows="4" placeholder="Please briefly describe your interest in this technology..."></textarea></div>
-      <button class="btn-submit" onclick="alert('Thank you for your enquiry! Mohan Devaraj will respond within 2 business days at mhndvrj@gmail.com')">Send Enquiry →</button>
     </div>
   </div>
 </section>
